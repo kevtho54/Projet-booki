@@ -26,28 +26,41 @@ nav a {
     text-align: center;
     text-decoration: none;
     color: black;
-    font-weight: bold;
+    
 }
 nav a:hover {
     border-top: 3px solid #0065FC;
     color: #0065FC;
 }
+    
+    h1 {
+        font-size: 1.1rem;
+        padding-left: 20px; 
+    }
+    header p {
+        font-size: 0.8rem;
+        padding-left: 20px;
+    }
+
 /* ------ header mobile -----*/
 
 @media  (max-width:768px){
-
-.logo {
-    width: 200px;
-    margin: auto;
-    padding-left: 50px;
-  }
+    
+    .logo {
+        width: 150px;
+        margin: auto;
+        padding-left: 50px;
+    }
  .navbar{
         width: 100%;
         display: flex;
         justify-content:space-around;
+        padding-bottom: 8px;
     }
     .navbar a {
         border-bottom: 3px solid #f2f2f2;
+        padding-bottom: 12px;
+        font-size: 1rem;
     }
  nav a:hover {
 
@@ -55,16 +68,15 @@ nav a:hover {
      border-top: none;
      color: #0065FC;
     }
- }
-/*--------- texte  header------*/
-h1 {
-    font-size: 1.1rem;
-    padding-left: 20px; 
-}
-p {
-    font-size: 0.8rem;
-    color: gray;
-    padding-left: 20px;
+    h1 {
+        font-size: 1.3rem;
+        padding-right: 40px;
+    }
+    header p {
+        font-size: 0.93rem;
+        padding-bottom: 20px;
+    }
+    
 }
 /* ---------Search Bar --------*/
 form {
@@ -109,28 +121,44 @@ input::placeholder {
 }
 /* ------- Search-bar mobile ------*/
 @media  (max-width:768px){
+   
+
+    
+    .search-bar form i {
+        padding:15px 15px 0px 15px;
+        border-radius: 17px 0px 0px 17px;
+        
+    }
+    .search-bar input {
+    padding: 0px 20px;
+    }
+
+    input::placeholder {
+
+        font-size: 1.1rem;
+    }
+
     #search-btn span {
         display: none;
     }
     #search-btn {
         position: relative;
-        /*right: 248px;*/
-        /*top: 270px;*/
-        left:-5%;
+        left: -7px;
         top: 55%;
-        padding: 2px 3px 2px 3px;
-
-        border-radius: 10px 10px 10px 10px;
+        padding: 5px 5px 19px 5px;
+        border-radius: 17px 17px 17px 17px;
     }
 
 #search-btn i {
     display: flex;  
     border: none;
     background-color: #0065FC;
+    font-size: 1.1rem;
 
 }
-
 }
+
+
 
 
     
