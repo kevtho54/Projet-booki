@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+ font-family: 'Raleway', sans-serif;
+}
+/* -------- header --------- */
+.logo {
+    width: 100px;
+    margin-right: auto;
+    padding-left: 15px;
+    
+}
+nav {
+    padding: 35px 10px 0px 0px;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    
+}
+
+nav a {
+    width: 100%;
+    padding:30px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+nav a:hover {
+    border-top: 3px solid #0065FC;
+    color: #0065FC;
+}
+@media  (max-width:768px){
+
+.logo {
+    width: 200px;
+    margin: auto;
+    padding-left: 50px;
+  }
+ .navbar{
+        width: 100%;
+        display: flex;
+        justify-content:space-around;
+    }
+    .navbar a {
+        border-bottom: 3px solid #f2f2f2;
+    }
+ nav a:hover {
+
+     border-bottom-color: #0065FC;
+     border-top: none;
+     color: #0065FC;
+    }
+ }
+/*--------- texte ------*/
+h1 {
+    font-size: 1.1rem;
+    padding-left: 20px; 
+}
+p {
+    color: gray;
+    padding-left: 20px;
+}
+/* ---------Search Bar --------*/
+form {
+    display: flex;
+    
+}
+.search-bar {
+    margin-left: 20px;
+}
+
+.search-bar form i {
+    padding: 10px;
+    background-color:#f2f2f2 ;
+    border: 3px solid #f2f2f2;
+    border-radius:10px 0px 0px 10px ;
+}
+.search-bar input{
+    border-right: none;
+    border: 2px solid #f2f2f2;
+    padding-left: 20px;
+}
+
+#search-btn {
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+    background-color: #0065FC;
+    color: white;
+    padding-right: 10px;
+}
+#search-btn i {
+    display: none;
+
+}
+.search-bar button:hover {
+    transform:scale(1.1);
+    cursor:pointer;
+}
+/* ------- Search-bar mobile ------*/
+@media  (max-width:768px){
+    #search-btn span {
+        display: none;
+    }
+    #search-btn {
+        position: relative;
+        /*right: 248px;*/
+        /*top: 270px;*/
+        left:-5%;
+        top: 55%;
+        padding: 2px 3px 2px 3px;
+
+        border-radius: 10px 10px 10px 10px;
+    }
+
+#search-btn i {
+    display: flex;  
+    border: none;
+    background-color: #0065FC;
+
+}
+
+}
+
+
+    
+   
+   
+
+  
+   
