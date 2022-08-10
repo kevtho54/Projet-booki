@@ -96,6 +96,7 @@ form {
 .search-bar input{
     border: 2px solid #f2f2f2;
     padding-left: 15px;
+    overflow: hidden;
 }
 input::placeholder {
     font-size: 0.8rem;
@@ -116,8 +117,9 @@ input::placeholder {
 
 }
 .search-bar button:hover {
-    transform:scale(1.1);
+    transform:scale(1.05);
     cursor:pointer;
+    transition: 150ms;
 }
 /* ------- Search-bar mobile ------*/
 @media  (max-width:768px){
@@ -135,7 +137,7 @@ input::placeholder {
 
     input::placeholder {
 
-        font-size: 1.1rem;
+        font-size: 0.9rem;
     }
 
     #search-btn span {
@@ -143,7 +145,7 @@ input::placeholder {
     }
     #search-btn {
         position: relative;
-        left: -7px;
+        left: -13px;
         top: 55%;
         padding: 5px 5px 19px 5px;
         border-radius: 17px 17px 17px 17px;
@@ -154,9 +156,76 @@ input::placeholder {
     border: none;
     background-color: #0065FC;
     font-size: 1.1rem;
+}
+}
+/* ----- Filters ---- */
+h2{
+    font-size: 0.9rem;
+    padding-right: 23px;
+    padding-left: 15px;
+}
+.filters {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 15px;   
+} 
+.filters button:hover {
+color: #0065FC;
+transform: scale(0.9);
+transition: 350ms;
+cursor: pointer;
+}
 
+.economique, .famillial, .romantique, .animaux{
+    border: 2px solid #f2f2f2;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    margin:0px 15px 0px 0px;
+    padding-right:10px;
+    font-size: 0.8rem;
+    
+    
 }
+
+
+
+.filters button {
+    border-radius: 30px;
+    border: none;
+    background-color: white;
+    font-weight: bold;
+    padding-left: 9px;
+    
+    
 }
+
+.filters i {
+background-color: #DEEBFF;
+color: #0065FC;
+font-size: 13px;
+width: 35px;
+height: 35px;
+text-align:center;
+border-radius: 30px ;
+padding-top: 11px;
+margin:-3px ;
+z-index: 1;
+}
+
+@media  (max-width:768px){
+    h2 {
+        width: 100%;
+       
+    }
+ .economique, .famillial, .romantique, .animaux {
+    margin: 10px 20px 10px 20px;
+ }
+ .famillial {
+    margin: 10px 0px 10px 20px;
+ }
+
 
 
 
