@@ -39,12 +39,12 @@ nav a:hover {
 }
 
 h1 {
-  font-size: 1.1rem;
+  font-size: 1.4rem;
  margin-left: 60px;
   padding-top: 30px;
 }
 header p {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   margin-left: 60px;
 }
 
@@ -249,7 +249,7 @@ h2 {
     margin-right: 10px
   }
   .info p {
-    font-size:0.7rem;
+    font-size:0.9rem;
   }
   
   /* ---------------- Hebergement + Les plus populaire ----------------*/
@@ -258,7 +258,7 @@ h2 {
   section {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     
   }
   
@@ -374,6 +374,8 @@ margin-top: -15px;
   .hebergements h2 {
   width: 100%;
   text-align: center;
+  font-size: 1.8rem;
+  padding-right: 100px;
   }
   .card {
     width: 100%;
@@ -387,10 +389,23 @@ margin-top: -15px;
     height: 135px;
   
   }
+  .card_title {
+    font-size: 1.1rem;
+  }
+  .card_prix{
+    font-size: 0.9rem;
+  }
   .card_title, .card_prix{
     margin-bottom: 10px;
     margin-top: 10px;
-    font-size: 0.9rem;
+  }
+  .stars_blue {
+    padding-top: 0px;
+  }
+  .afficher_plus {
+    margin-top: 20px;
+    margin-left: 80px;
+    font-size: 1.1rem;
   }
 }
 
