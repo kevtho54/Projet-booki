@@ -5,9 +5,6 @@
   max-width: 1440px;
   box-sizing: border-box;
   font-family: "Raleway", sans-serif;
-  /*margin-right: 0px;*/
-  
- 
 
   }
 /* ------------------ header ------------------- */
@@ -23,12 +20,13 @@ nav {
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
+  margin-right: 30px;
 }
 
 nav a {
   width: 100%;
   padding: 30px;
-  font-size: 0.8rem;
+  font-size: 1.1rem;
   text-align: center;
   text-decoration: none;
   color: black;
@@ -39,12 +37,12 @@ nav a:hover {
 }
 
 h1 {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
  margin-left: 60px;
   padding-top: 30px;
 }
 header p {
-  font-size: 0.9rem;
+  font-size: 1rem;
   margin-left: 60px;
 }
 
@@ -98,7 +96,7 @@ form {
 }
 
 .search-bar form i {
-  padding: 7px;
+  padding: 13px;
   background-color: #f2f2f2;
   border: 3px solid #f2f2f2;
   border-radius: 10px 0px 0px 10px;
@@ -109,7 +107,7 @@ form {
   overflow: hidden;
 }
 input::placeholder {
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: black;
   font-weight: bold;
 }
@@ -117,7 +115,7 @@ input::placeholder {
 #search-btn {
   border: none;
   border-radius: 0px 10px 10px 0px;
-  font-size: 0.8rem;
+  font-size: 1rem;
   background-color: #0065fc;
   color: white;
   padding-right: 10px;
@@ -169,7 +167,7 @@ input::placeholder {
 }
 /* ---------------Filters -------------- */
 h2 {
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   padding-right: 23px;
   margin-left: 60px;
 }
@@ -191,9 +189,9 @@ h2 {
   background-color: white;
   border-radius: 30px;
   display: flex;
-  margin: 0px 15px 0px 0px;
+  margin: 0px 20px 0px 0px;
   padding-right: 10px;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 .filters button {
@@ -201,21 +199,36 @@ h2 {
   border: none;
   background-color: white;
   font-weight: bold;
-  padding-left: 9px;
+  padding:0px 10px 0px 10px;
 }
 
 .filters i {
   background-color: #deebff;
   color: #0065fc;
-  font-size: 13px;
-  width: 35px;
-  height: 35px;
+  font-size: 19px;
+  width: 55px;
+  height: 55px;
   text-align: center;
   border-radius: 30px;
-  padding-top: 11px;
-  margin: -3px;
+  padding-top: 17px;
+  margin: -2px;
   z-index: 1;
 }
+
+/* ---------- Filters tablette -------- */
+@media only screen and (max-width: 992px) and (min-width: 768px)  {
+  h2 {
+    width: 100%;
+    margin-left: 30px;
+  }
+  .economique,.famillial,.romantique,.animaux {
+    margin: 10px 20px 10px 20px;
+  }
+  .animaux{
+    margin-top: 20px;
+  }
+}
+
 /* ---------- Filters mobile ----------*/
 
 @media (max-width: 768px) {
@@ -245,11 +258,11 @@ h2 {
     color: #0065fc;
     border-radius: 50%;
     padding:4px 8px 4px 8px;
-    font-size: 12px;
+    font-size: 14px;
     margin-right: 10px
   }
   .info p {
-    font-size:0.9rem;
+    font-size:1rem;
   }
   
   /* ---------------- Hebergement + Les plus populaire ----------------*/
@@ -257,14 +270,12 @@ h2 {
   /* ---------------- Hébergement ----------------*/
   section {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 40px;
     
   }
   
   .hebergements {
-    width: 65%;
-    /*height: 600px;*/
+    width: 66%;
     background: #f2f2f2;
     margin-left: 60px;
     border-radius: 15px;
@@ -294,12 +305,13 @@ h2 {
 }
  .card{
     width: 31%;
-    height: 200px;
+  
     background-color:white;
     text-align:center;
     border-radius: 15px;
     margin-bottom: 4%;
-    box-shadow:3px 6px 9px 0px black;
+    box-shadow:3px 6px 9px 0px gray;
+    
 }
 
 .hebergements img {
@@ -308,38 +320,42 @@ h2 {
     border-radius: 15px 15px 0px 0px;
     padding-top: 1.5%;
     object-fit: cover;
-   
+    
 }
 .card_title{
     width: 100%;
-    font-size: 12.2px;
-    margin-top: -5%;
+    font-size: 13px;
     text-decoration: none;
     color: black;
-    
+    margin-top: -10px   
 }
 .card_prix {
     font-size: 0.8rem;
     color: black;
+    padding-top: 1px;
+  
 }
 .card_prix span{
   font-weight: bold;
   color: black;
 }
 .card_title, .card_prix{
-    
     text-align:left;
-    padding-left: 8%;
-    margin-bottom: -8px;
+    padding-left: 6%;
+    margin-bottom: -18px;
+    
 }
+
 .stars_blue {
     display: flex;
     justify-content:flex-start;
+    
+
     color: #0065fc;
     font-size: 15px;
-    padding-left: 8%;
-    padding-top: 2%;
-    padding-bottom: 3%;
+    padding-left: 5%;
+    padding-top: 6%;
+    margin-bottom: 5%;
 }
 .stars_grey{
     color: #f2f2f2;
@@ -348,13 +364,13 @@ h2 {
 .afficher_plus {
   font-weight: bold;
  color: black;
-margin-top: -15px;
+margin-top: 10px;
 }
 /* ---------------- Hebergements Responsive tablette ----------------*/
 
 @media only screen and (max-width: 992px) and (min-width: 768px)  {
   .hebergements {
-    background-color: red;
+    background-color: #f2f2f2
   }
   .card{
     width: 45%;
@@ -410,6 +426,78 @@ margin-top: -15px;
 }
 
 /* ---------------- Les plus populaires -----------------*/
+
+
+
 .populaire {
+  width:33%;
   background-color: #f2f2f2;
+  display: flex;
+  flex-wrap: wrap;
+  padding:2% 2% 2% 2%;
+  border-radius: 15px;
+  
+  
+  
+}
+
+
+.populaire h2 {
+  width: 100%;
+ text-align: left;
+  font-size: 1.3rem;
+  margin-left: -5px;
+  margin-bottom: 16px;
+  margin-top: 18px;
+}
+.card_pop {
+    width: 100%;
+    height: 140px;
+    background-color:white;
+    border-radius: 15px;
+    margin-bottom: 10%;
+    box-shadow:3px 6px 9px 0px grey; 
+}
+.card_pop:hover {
+  transform: scale(1.1);
+  transition: 400ms;
+  cursor: pointer;
+}
+
+.populaire img{
+
+  width: 120px;
+  height: 136px;
+  border-radius: 15px 0px 0px 15px;
+  padding-top: 1.2%;
+  padding-left: 1.5%;
+  object-fit: cover;
+}
+.populaire a {
+  display: flex;
+  text-decoration: none;
+}
+.card_texte {
+  padding: 10px 0px 0px 8px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap:wrap ;
+ 
+
+}
+.populaire .card_title {
+ width:100%;
+}
+.populaire .card_prix {
+  padding-bottom: 30px;
+}
+
+.title_black_star {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;  
+}
+.black_star {
+  margin-top: 18px;
+  font-size: 22px;
 }
