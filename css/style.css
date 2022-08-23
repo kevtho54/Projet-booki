@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500&display=swap");
 
-
+body{
+  min-width: 340px;
+}
 * {
   max-width: 1440px;
   box-sizing: border-box;
@@ -20,7 +22,6 @@ nav {
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
-  margin-right: 30px;
 }
 
 nav a {
@@ -53,6 +54,9 @@ header p {
     width: 150px;
     margin: auto;
     padding-left: 50px;
+  }
+  nav {
+    padding-right: 0px;
   }
   .navbar {
     width: 100%;
@@ -219,13 +223,17 @@ h2 {
 @media only screen and (max-width: 992px) and (min-width: 768px)  {
   h2 {
     width: 100%;
-    margin-left: 30px;
+    margin-left: 60px;
   }
   .economique,.famillial,.romantique,.animaux {
     margin: 10px 20px 10px 20px;
   }
+  .economique {
+    margin-left: 60px;
+  }
   .animaux{
     margin-top: 20px;
+    margin-left: 60px;
   }
 }
 
@@ -246,7 +254,7 @@ h2 {
 /* ----------------- Info ---------------*/
 
 .info {
-    width: 100%;
+   
     display: flex;
     align-items: center;
     margin-left: 60px;
@@ -264,6 +272,13 @@ h2 {
   .info p {
     font-size:1rem;
   }
+  /*---------- Info responsive mobile ----------*/
+  @media (max-width: 768px) {
+    .info {
+      margin-left: 20px;
+      width: 92%;
+    }
+  }
   
   /* ---------------- Hebergement + Les plus populaire ----------------*/
   
@@ -271,7 +286,6 @@ h2 {
   section {
     display: flex;
     gap: 40px;
-    
   }
   
   .hebergements {
@@ -280,7 +294,6 @@ h2 {
     margin-left: 60px;
     border-radius: 15px;
     padding: 2%;
-    
   }
  
 .hebergements h2{
@@ -305,7 +318,6 @@ h2 {
 }
  .card{
     width: 31%;
-  
     background-color:white;
     text-align:center;
     border-radius: 15px;
@@ -349,7 +361,6 @@ h2 {
 .stars_blue {
     display: flex;
     justify-content:flex-start;
-    
 
     color: #0065fc;
     font-size: 15px;
@@ -370,7 +381,10 @@ margin-top: 10px;
 
 @media only screen and (max-width: 992px) and (min-width: 768px)  {
   .hebergements {
-    background-color: #f2f2f2
+    background-color: #f2f2f2;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .card{
     width: 45%;
@@ -390,30 +404,36 @@ margin-top: 10px;
   .hebergements h2 {
   width: 100%;
   text-align: center;
-  font-size: 1.8rem;
-  padding-right: 100px;
+  font-size: 1.4rem;
+  padding-right: 50px;
   }
+  
   .card {
-    width: 100%;
-    height: 270px;
+    width: 90%;
+    height: 220px;
     margin-bottom: 30px;
-    margin: 10px 60px;
+    margin-left: auto;
+    margin-right: auto;
     
   }
   .hebergements img{
     object-fit: cover;
-    height: 135px;
+    height: 125px;
   
   }
+  
+
   .card_title {
     font-size: 1.1rem;
+    margin-top: -15px;
   }
   .card_prix{
     font-size: 0.9rem;
+    margin-top: -27px;
   }
   .card_title, .card_prix{
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin-bottom: -5px;
+   
   }
   .stars_blue {
     padding-top: 0px;
@@ -423,11 +443,10 @@ margin-top: 10px;
     margin-left: 80px;
     font-size: 1.1rem;
   }
-}
+  }
+
 
 /* ---------------- Les plus populaires -----------------*/
-
-
 
 .populaire {
   width:33%;
@@ -435,24 +454,25 @@ margin-top: 10px;
   display: flex;
   flex-wrap: wrap;
   padding:2% 2% 2% 2%;
-  border-radius: 15px;
-  
-  
-  
+  border-radius: 15px; 
 }
-
-
 .populaire h2 {
   width: 100%;
  text-align: left;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   margin-left: -5px;
   margin-bottom: 16px;
   margin-top: 18px;
 }
+.full_card_pop {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+ align-items:center;
+}
 .card_pop {
     width: 100%;
-    height: 140px;
+    height: 148px;
     background-color:white;
     border-radius: 15px;
     margin-bottom: 10%;
@@ -476,21 +496,27 @@ margin-top: 10px;
 .populaire a {
   display: flex;
   text-decoration: none;
+  min-width: 288px;
 }
 .card_texte {
-  padding: 10px 0px 0px 8px;
+  padding: 5px 0px 0px 5px;
   display: flex;
   flex-direction: column;
   flex-wrap:wrap ;
- 
-
 }
-.populaire .card_title {
- width:100%;
+.populaire .card_title{
+  font-size: 1rem;
 }
 .populaire .card_prix {
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
+/*.stars_blue_2 {
+  display: flex;
+  color: #0065fc;
+  font-size: 15px;
+  padding-left: 5%;
+  margin-bottom: 15%;
+}*/
 
 .title_black_star {
   width: 100%;
@@ -501,3 +527,127 @@ margin-top: 10px;
   margin-top: 18px;
   font-size: 22px;
 }
+/* ------- les plus populaire responsive tablette ------*/
+@media only screen and (max-width: 992px) and (min-width: 769px)  {
+  section{
+    display: flex;
+    flex-direction:column-reverse
+  }
+  .populaire{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    display: flex;
+  }
+.full_card_pop{
+  width: 90%; 
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card_pop{
+  height: 200px;
+  margin-bottom: 4%;
+}
+.populaire h3 {
+  font-size: 1.2rem;
+}
+ .populaire .card_prix {
+   font-size: 0.9rem;
+   margin-bottom: 20px;
+ }
+ .populaire img{
+  width: 180px;
+  height: 194px;
+  border-radius:15px 0px 0px 15px;
+  padding-top: 1%;
+  padding-left: 1%;
+  object-fit: cover;
+}
+}
+/* ------ Les plus populaire responsive mobile -----*/
+@media (max-width: 768px) {
+
+section{
+  display: flex;
+  flex-direction:column-reverse;
+  flex-wrap: wrap;
+}
+.populaire{
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  display: flex;
+  border-radius: 0px;
+}
+
+.populaire h2 {
+  margin-left: 20px;
+}
+.title_black_star{
+  margin:10px 20px -10px 0px;
+}
+.full_card_pop{
+width: 95%; 
+margin-top: 25px;
+margin-left: auto;
+margin-right: auto;
+}
+.card_pop{
+ /* display: flex;*/
+  width: 100%;
+height: 150px;
+margin-bottom: 20px;
+margin-left: auto;
+margin-right: auto;
+}
+.populaire .card_title{
+  font-size: 0.9rem;
+}
+.populaire p {
+ font-size: 0.8rem;
+ margin: 40px 0px 20px 0px;
+}
+.populaire img{
+width: 140px;
+height: 146px;
+border-radius:15px 0px 0px 15px;
+padding-top: 1%;
+padding-left: 1%;
+object-fit: cover;
+}
+}
+/*---------- Activité a Marseille ----------*/
+
+.activité {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+}
+#title {
+  width: 100%;
+}
+.contener {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+ 
+}
+
+.activité img{
+width: 100%;
+border-radius: 20px 20px 0px 0px ;
+object-fit: cover;
+}
+.vieux_port, .parc{
+  border:  2px solid red;
+  border-radius: 20px;
+  width: 600px;
+  height: 400px;
+}
+.vieux_port img, .parc img{
+  height: 350px;
+}
+
