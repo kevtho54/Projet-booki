@@ -307,7 +307,7 @@ h2 {
   justify-content: space-between;
  align-items:center;
 }
-.card:hover {
+.hebergements .card:hover {
   transform: scale(1.1);
   transition: 400ms;
   cursor: pointer;
@@ -623,31 +623,76 @@ object-fit: cover;
   width: 100%;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  
 
 }
 #title {
   width: 100%;
+  margin:45px 0px 10px 60px;
 }
 .contener {
   display: flex;
-  justify-content: space-around;
-  width: 100%;
- 
+  justify-content: space-between;
+  margin-left: 60px;
+  gap: 35px;
 }
-
+.activité a{
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+.activité .title {
+  padding-left: 10px;
+}
+.vieux_port, .fort, .iles, .parc, .notre_dame, .parc_longchamp{
+  border-radius: 20px;
+  box-shadow: 8px 5px 16px 0px grey;
+  
+}
 .activité img{
 width: 100%;
 border-radius: 20px 20px 0px 0px ;
 object-fit: cover;
 }
 .vieux_port, .parc{
-  border:  2px solid red;
-  border-radius: 20px;
-  width: 600px;
-  height: 400px;
+  width: 300px;
+  height: 450px;
+  min-width: 200px;
 }
 .vieux_port img, .parc img{
-  height: 350px;
+  height: 400px;
 }
+.title{
+  margin: -8px 0px 0px 3px;
+}
+.activité .card {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: none; 
+  text-align: left;
+}
+.fort {
+  height: 260px;
+  margin-bottom: 30px;
+}
+.fort img{
+  height: 210px;
+}
+
+.iles img{
+  height: 110px;
+}
+.notre_dame {
+  height:210px;
+  margin-bottom: 30px;
+}
+.notre_dame img {
+  height: 158px;
+}
+.parc_longchamp img {
+height: 160px;
+
+}
+
 
