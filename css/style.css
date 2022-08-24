@@ -387,7 +387,7 @@ margin-top: 10px;
     margin-right: auto;
   }
   .card{
-    width: 45%;
+    width:45%;
   }
 }
 
@@ -510,13 +510,6 @@ margin-top: 10px;
 .populaire .card_prix {
   padding-bottom: 20px;
 }
-/*.stars_blue_2 {
-  display: flex;
-  color: #0065fc;
-  font-size: 15px;
-  padding-left: 5%;
-  margin-bottom: 15%;
-}*/
 
 .title_black_star {
   width: 100%;
@@ -627,28 +620,32 @@ object-fit: cover;
 
 }
 #title {
-  width: 100%;
   margin:45px 0px 10px 60px;
 }
 .contener {
   display: flex;
-  justify-content: space-between;
+
   margin-left: 60px;
   gap: 35px;
 }
+
 .activité a{
   text-decoration: none;
   font-weight: bold;
   color: black;
 }
+
 .activité .title {
   padding-left: 10px;
+  margin: -8px 0px 0px 3px;
 }
 .vieux_port, .fort, .iles, .parc, .notre_dame, .parc_longchamp{
   border-radius: 20px;
   box-shadow: 8px 5px 16px 0px grey;
   
 }
+
+
 .activité img{
 width: 100%;
 border-radius: 20px 20px 0px 0px ;
@@ -662,16 +659,20 @@ object-fit: cover;
 .vieux_port img, .parc img{
   height: 400px;
 }
-.title{
-  margin: -8px 0px 0px 3px;
+.vieux_port:hover, .fort:hover, .iles:hover, .parc:hover, .notre_dame:hover, .parc_longchamp:hover{
+    transform: scale(1.1);
+    transition: 400ms;
+    cursor: pointer;
 }
 .activité .card {
   width: 300px;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   box-shadow: none; 
   text-align: left;
 }
+
 .fort {
   height: 260px;
   margin-bottom: 30px;
@@ -692,7 +693,41 @@ object-fit: cover;
 }
 .parc_longchamp img {
 height: 160px;
-
 }
+.notre_dame, .parc_longchamp{
+  margin-right:25px ;
+}
+/* ------ Activité a marseille responsible tablette  -------*/
 
+@media only screen and (max-width: 992px) and (min-width: 769px)  {
+  .activité{
+    margin-left: auto;
+    margin-right: auto;
 
+  }
+  .contener {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 1000px;
+  
+  }
+  .vieux_port , .parc {
+    width:41% ;
+    height: 230px;
+  }
+  .vieux_port img, .parc img {
+height: 190px;
+  }
+  .activité .card{
+    width: auto;
+  }
+  .fort, .notre_dame, .iles, .parc_longchamp{
+    width: 86%;
+    height: 230px;
+  }
+  .fort img, .notre_dame img, .iles img, .parc_longchamp img{
+    height: 190px;
+  }
+ 
+}
