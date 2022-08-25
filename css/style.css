@@ -454,7 +454,7 @@ section {
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-left: 0px;
+    margin-left: 15px;
   }
 
   .hebergements h2 {
@@ -501,8 +501,8 @@ section {
   }
 
   .afficher_plus {
-    margin-top: 20px;
-    margin-left: 80px;
+    margin-top: 10px;
+    margin-left: 35px;
     font-size: 1.1rem;
   }
 }
@@ -836,6 +836,9 @@ section {
 /* ------ activité a marseille responsive mobile -----*/
 @media (max-width: 768px) {
 
+.activité{
+  margin-top: -50px;
+}
   .contener {
     display: flex;
     flex-direction: column;
@@ -844,7 +847,7 @@ section {
 
   .vieux_port,
   .parc{
-    width: 92%;
+    width: 95%;
     height: 200px;
   }
 
@@ -858,7 +861,7 @@ section {
   }
 
   #card {
-    width: 92%;
+    width: 95%;
     height: 447px;
     margin-top: 8px;
    
@@ -910,4 +913,25 @@ li {
 }
 .assistance {
   margin-right: 300px;
+}
+/* ---------- footer responsive tablette ----------*/
+@media only screen and (max-width: 992px) and (min-width: 769px) {
+  footer{
+    margin-right: 30px;
+  }
+.assistance{
+  margin-right: 20px;
+}
+}
+/* ---------- footer responsive mobile ----------*/
+@media (max-width: 768px) {
+footer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0px;
+  padding-left: 60px;
+}
+.a_propos{
+  margin-left: 0px;
+}
 }
