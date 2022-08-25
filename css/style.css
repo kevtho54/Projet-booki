@@ -755,7 +755,7 @@ section {
   cursor: pointer;
 }
 
-#card {
+.activité .card {
   width: 350px;
   display: flex;
   flex-direction: column;
@@ -819,7 +819,7 @@ section {
   .parc img {
     height: 190px;
   }
-  #card {
+  .activité .card {
     width: auto;
   }
   .fort,.notre_dame,.iles,.parc_longchamp {
@@ -856,14 +856,15 @@ section {
     height: 160px;
   }
   .parc{
-    margin-top: -10px;
+    margin-top: -40px;
 
   }
 
-  #card {
+  .activité .card {
     width: 95%;
     height: 447px;
     margin-top: 8px;
+    margin-left: 0px;
    
   }
   .fort, .iles{
@@ -918,6 +919,7 @@ li {
 @media only screen and (max-width: 992px) and (min-width: 769px) {
   footer{
     margin-right: 30px;
+    margin-top: -170px;
   }
 .assistance{
   margin-right: 20px;
