@@ -522,6 +522,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   padding: 2% 2% 2% 2%;
+  margin-right: 20px;
   border-radius: 15px;
 }
 
@@ -890,7 +891,7 @@ section {
     width: 92%;
     height: 447px;
     margin-top: 8px;
-    margin-left: 4px;
+  
    
   }
   .fort, .iles{
