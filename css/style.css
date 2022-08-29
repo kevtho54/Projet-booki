@@ -875,7 +875,7 @@ section {
   .parc{
     width: 92%;
     height: 208px;
-    margin-left: 4px;
+    margin-left: 8px;
   }
 
   .vieux_port img,
@@ -891,7 +891,7 @@ section {
     width: 92%;
     height: 447px;
     margin-top: 8px;
-  
+    margin-left: 8px;
    
   }
   .fort, .iles{
