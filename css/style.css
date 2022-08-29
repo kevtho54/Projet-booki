@@ -349,6 +349,7 @@ section {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  width: auto;
 }
 
 .hebergements .card:hover {
@@ -382,11 +383,11 @@ section {
 }
 
 .card_title {
-  width: 100%;
-  font-size: 13px;
+ /* width: 100%;*/
+  font-size: 0.8rem;
   text-decoration: none;
   color: black;
-  margin-top: -10px
+  margin-top: -10px;
 }
 
 .card_prix {
@@ -454,7 +455,8 @@ section {
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-left: 15px;
+   margin-left: 0px;
+  
   }
 
   .hebergements h2 {
@@ -472,7 +474,11 @@ section {
     margin-right: auto;
 
   }
-
+   .card:hover {
+    transform: scale(1);
+    transition: 400ms;
+    cursor: pointer; 
+  }
   .hebergements img {
     object-fit: cover;
     height: 125px;
@@ -574,11 +580,14 @@ section {
 }
 
 .populaire .card_title {
-  font-size: 1rem;
+  font-size: 13px;
 }
 
 .populaire .card_prix {
   padding-bottom: 20px;
+}
+.populaire .stars_blue {
+  margin-top: 20px;
 }
 
 .title_black_star {
@@ -635,6 +644,9 @@ section {
     padding-left: 1%;
     object-fit: cover;
   }
+  .populaire .stars_blue{
+    margin-top: 5px;
+  }
 }
 
 /* ------ Les plus populaire responsive mobile -----*/
@@ -648,7 +660,7 @@ section {
 
   .populaire {
     margin-left: auto;
-    margin-right: auto;
+    
     width: 100%;
     display: flex;
     border-radius: 0px;
@@ -676,9 +688,14 @@ section {
     margin-left: auto;
     margin-right: auto;
   }
+  .card_pop:hover {
+    transform: scale(1.05);
+    transition: 400ms;
+    cursor: pointer;
+  }
 
   .populaire .card_title {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
   .populaire p {
@@ -694,6 +711,9 @@ section {
     padding-left: 1%;
     object-fit: cover;
   }
+  .populaire .stars_blue{
+  margin-top: 5px;
+}
 }
 
 /*---------- Activité a Marseille ----------*/
@@ -838,22 +858,28 @@ section {
 
 .activité{
   margin-top: -50px;
+  
+  
 }
   .contener {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    margin-left: 40px;
   }
-
+#title {
+  margin-left: 45px;
+}
   .vieux_port,
   .parc{
-    width: 95%;
-    height: 200px;
+    width: 92%;
+    height: 208px;
+    margin-left: 4px;
   }
 
   .vieux_port img,
   .parc img {
-    height: 160px;
+    height: 165px;
   }
   .parc{
     margin-top: -40px;
@@ -861,17 +887,17 @@ section {
   }
 
   .activité .card {
-    width: 95%;
+    width: 92%;
     height: 447px;
     margin-top: 8px;
-    margin-left: 0px;
+    margin-left: 4px;
    
   }
   .fort, .iles{
-    height: 200px;
+    height: 208px;
   }
   .fort img, .iles img {
-    height:160px ;
+    height:165px ;
   }
   .notre_dame, .parc_longchamp{
     width: 100%;
@@ -932,8 +958,15 @@ footer {
   flex-direction: column;
   margin-left: 0px;
   padding-left: 60px;
+  margin-bottom: 0px;
+}
+.a_propos, .assistance, .nos_hebergements{
+  width: 100%;
 }
 .a_propos{
   margin-left: 0px;
+}
+.assistance {
+  margin-right: 0px;
 }
 }
